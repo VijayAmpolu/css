@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinational selectors</title>
+    <style>
+        .container{
+            padding: 30px;
+            margin: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: lightblue;
+            border: 3px solid #0c0c0c;
+        }
+        .container>h1{ /child selector/
+            color: rgb(255, 255, 255);
+            background-color: darkgoldenrod;
+            padding: 10px;
+        }
+        .container>p{
+            color: #fff;
+            background-color: darkcyan;
+            padding: 10px;
+        }
+        .container>div{
+            padding: 20px;
+            border: 2px solid #0c0c0c;
+        }
+        .container>div>h1{
+            background-color: #0c0c0c;
+            color: greenyellow;
+            padding: 20px;
+        }
+        .container>div>p{
+            padding: 10px;
+            background-color: darkred;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS COMBINATION SELECTORS</h1>
+    </center>
+
+    <ul>
+        <li>Descendent selector (USING SPACE)</li>
+        <li>Child selector (USING > SYMBOL)</li>
+        <li>Adjacent sibling selector (USING + SYMBOL)</li>
+        <li>General sibling selector (USING ~ SYMBOL)</li>
+    </ul>
+
+    <h1>2) Child selector (USING > SYMBOL)</h1>
+    <p>the child selctor is only for childs not for grand childs</p>
+    <section class="container">
+       <h1>heading 1 (Child element)</h1>
+       <p>this is the paragraph (child)</p>
+
+       <h1>heading 2 (Child element)</h1>
+       <p>this is the paragraph (child)</p>
+
+       <h1>heading 3 (Child element)</h1>
+       <p>this is the paragraph (child)</p>
+
+       <div>
+        <h1>heading 1 (GrandChild element)</h1>
+       <p>this is the paragraph (child)</p>
+       </div>
+
+       <h1>heading 2 (Child element)</h1>
+       <p>this is the paragraph (child)</p>
+
+       <h1>heading 3 (Child element)</h1>
+       <p>this is the paragraph (child)</p>
+    </section>
+    
+</body>
+</html>

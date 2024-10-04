@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            height: 150vh;
+
+        }
+        #card{
+            height: 500px;
+            width: 100%;
+            background-image: url(https://plus.unsplash.com/premium_photo-1672115680958-54438df0ab82?q=80&w=1784&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            border-bottom: 30px;
+            text-align: center;
+            justify-content: center;
+
+        }
+        #card p{
+            font-size: 2rem;
+            padding-top: 100px;
+        }
+        #card h1{
+            font-size: 3rem;
+        }
+        #card button{
+            width: 100px;
+            height: 50px;
+           padding: 10px;
+           margin-top: 40px;
+        }
+        #para{
+            margin-top: -100px;
+        }
+        #card button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+            border-radius: 10px;
+        }
+        #cards{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 30px;
+            gap: 100px;
+            
+        }
+        #left-card{
+            flex: 1;
+            padding: 20px;
+            margin-left: 250px;
+        }
+        #left-card h1{
+            font-size: 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #left-card p{
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+        }
+        #right-card{
+            flex: 1;
+        }
+        #right-card img{
+            width: 500px;
+            height: 700px;
+            object-fit: cover;
+            object-position: center;
+        }
+        #left-card button{
+            width: 150px;
+            height: 40px;
+           padding: 10px;
+        }
+        #left-card button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 10px;
+        }
+    
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div id="card">
+            <p>AMBITION IS THE FIRST STEP TOWARDS </p>
+            <h1>SUCCESS</h1>
+            <p id="para">Now Available for Online Coaching</p>
+            <button>Book Now</button>
+        </div>
+        <div id="cards">
+            <div id="left-card">
+               <h1>ABOUT ME</h1>
+               <p>
+                I'm a paragraph. Click here to add your own text and <br>edit me. It’s easy. Just click “Edit Text” or double <br>click me to add your own content and make changes <br>to the font. Feel free to drag and drop me anywhere <br>you like on your page. ​
+                <br>
+                <br>
+                This is a great space to write long text about your <br>company and your services. You can use this space to <br>go into a little more detail about your company. Talk <br>about your team and what services you provide.
+                </p>
+                <button>Read More</button>
+                <button id="point">Free Consulation</button>
+            </div>
+            <div id="right-card">
+                <img src="https://static.wixstatic.com/media/ea71bb_e7959a5be116482b9727a9be900d2d35~mv2_d_5454_3840_s_4_2.jpg/v1/fill/w_950,h_895,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ea71bb_e7959a5be116482b9727a9be900d2d35~mv2_d_5454_3840_s_4_2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

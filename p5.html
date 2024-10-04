@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+         section{
+            /*providing styles using tag name} */
+            min-height: 100vh;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 4%;
+         }
+         div{
+            width: 350px;
+            background-color: green;
+            padding: 30px;
+            line-height: 1.5;
+         }
+         div button{
+            width: 100%;
+            margin-top: 20px;
+            border: none;
+            padding: 10px;
+            font-size: 1.1rem;
+            background-color: rgb(17,135,109);
+            font-weight: 600;
+            border-radius: 5px;
+            box-shadow: 0px 3px 10px rgb(17,135,109);
+            cursor: pointer;
+         }
+         div button:active{
+            transform: scale(0.9);
+         }
+         div h1{
+            color: #55bc7c;
+            margin-bottom: 20px;
+         }
+         div p{
+            color: rgb(54,54,54);
+         }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS SELECTOR</h1>
+        <p>we have some css selector to style the html element</p>
+    </center>
+    <ul>
+        <li>Universal selector (*)</li>
+        <li>Element selector (tag name)(*)</li>
+        <li>Class name selector (class name using .)</li>
+        <li>Id selector (using id attribute)</li>
+        <li>Attribute  selector (using any attribute inside the element)</li>
+        <li>Attribute with the value selector (attribute with value) </li>
+    </ul>
+
+
+    <h1><B>Element SELECTOR (tag name)</B></h1>
+  <section>
+      <!-- div*5>h1{heading&}/p{Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!} -->
+      <div>
+        <h1>Heading1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!</p>
+        <button>Know more</button>
+    </div>
+    <div>
+        <h1>Heading2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!</p>
+        <button>Know more</button>
+    </div>
+    <div>
+        <h1>Heading3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!</p>
+        <button>Know more</button>
+    </div>
+    <div>
+        <h1>Heading4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!</p>
+        <button>Know more</button>
+    </div>
+    <div>
+        <h1>Heading5</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aut fugiat sint, adipisci facere possimus provident ut atque dolor maxime delectus obcaecati commodi consequatur, in qui? Debitis aspernatur iusto possimus!</p>
+        <button>Know more</button>
+    </div>
+  </section>
+</body>
+</html>
