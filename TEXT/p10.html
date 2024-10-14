@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Wrap</title>
+    <style>
+        section{
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        section div{
+            padding: 30px;
+            border: 4px solid #ccc;
+            width: 300px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section div p{
+            text-align: center;
+        }
+        .b1{
+            text-wrap: wrap;
+        }
+        .b2{
+            text-wrap: nowrap;
+        }
+        .b3{
+            text-wrap: balance;
+        }
+        .b4{
+            text-wrap: pretty;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>text-wrap</h1>
+    </center>
+    <hr>
+    <section>
+        <h2>Wrap</h2>
+        <div class="b1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, corrupti laudantium maxime cupiditate nesciunt sequi dolorem ipsa adipisci ratione unde distinctio, omnis commodi suscipit blanditiis magnam expedita voluptatum eius repellat.</p>
+        </div>
+        <hr>
+
+        <h2>Nowrap</h2>
+        <div class="b2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dolorem id accusamus accusantium natus deleniti et aut, sapiente molestias doloribus pariatur a at deserunt atque iste assumenda corrupti, rem eius?</p>
+        </div>
+        <hr>
+
+        <h2>balance</h2>
+        <div class="b3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque aliquam dolores in? Mollitia, ipsa placeat aliquam rem iste tempore expedita neque quia cum non ullam? Saepe sit voluptatibus nobis?</p>
+        </div>
+        <hr>
+         
+        <h2>preety</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla aperiam consectetur doloremque, quod doloribus amet quasi quas cupiditate aut reprehenderit perspiciatis minima voluptas quibusdam reiciendis ipsam? Enim, inventore sunt.</p>
+    </section>
+</body>
+</html>

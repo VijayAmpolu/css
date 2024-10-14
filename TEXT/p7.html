@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .block1{
-            width: 350px;
-            padding: 30px;
-            margin: 30px;
-            border: 4px solid #ccc;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .block h1{
-            font-size: 3rem;
-            -webkit-text-stroke: 2px blueviolet;
-            color: transparent;
-        }
+       div{
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid #ccc;
+        width: 50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .b1{
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+       }
+       .b2{
+           writing-mode: vertical-rl; /*right side vertical */
+         text-orientation: upright;
+       }
     </style>
 </head>
 <body>
     <center>
-        <h1>Text Stroke</h1>
+        <h1>Text orientation</h1>
     </center>
-
-    <div class="block1">
-        <h1>This is the text</h1>
-    </div>
+        
 </body>
 </html>

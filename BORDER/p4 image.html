@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDER</title>
+    <style>
+        .container{
+            padding: 30px;
+        }
+        .container div{
+            width: 300px;
+            min-height: 100px;
+            padding: 20px;
+            border-width: 15px;
+            border-color: orange;
+            border-style: solid;
+            margin: auto;
+            margin-bottom: 20px;
+            font-variant: small-caps;
+        }
+
+        .b1{
+            border-image: linear-gradient(orange, green) 1;
+        }
+        .b2{
+
+        }
+        .b3{
+
+        }
+
+        .profile{
+            width: 80px;
+            height: 80px;
+           
+            background-color: rgb(47, 74, 98);
+            border-width: 5px;
+            border-color: gray;
+            border-style: solid;
+            border-image: linear-gradient(#ef0f1e, #4d00c1)  10;
+            border-radius: 100px;
+        }
+
+        .mask{
+            background: linear-gradient(5deg, #ef0f1e, #4d00c1, #000fd4);
+            width: fit-content;
+            height: fit-content;
+            margin-bottom: 30px;
+            border-radius: 100px;
+            padding: 10px;
+        }
+        .profile2{
+            width: 80px;
+            height: 80px;
+         border-radius: 100px;
+            background-color: rgb(255, 255, 255);
+         
+        }
+
+        .b4{
+            border-image: repeating-linear-gradient(180deg, orange, green 50px, teal 10px) 10;
+        }
+
+        .b3{
+            border-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/930/656/small_2x/red-luxury-background-with-gold-mandala-ornament-vector.jpg) 10;
+            background-color: #470206;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>BORDER-IMAGE</h1>
+    </center>
+    <hr>
+    <div class="mask">
+        <div class="profile2"></div>
+    </div>
+
+    <!-- <div class="profile"></div> -->
+    <section class="container">
+ 
+        <div class="b1">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora qui culpa optio dolores, asperiores officia. Fugit deserunt sunt corrupti, at exercitationem sint porro iste et impedit, sequi similique, nihil obcaecati.</p>
+        </div>
+
+        <div class="b4">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora qui culpa optio dolores, asperiores officia. Fugit deserunt sunt corrupti, at exercitationem sint porro iste et impedit, sequi similique, nihil obcaecati.</p>
+        </div>
+
+        <div class="b3">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora qui culpa optio dolores, asperiores officia. Fugit deserunt sunt corrupti, at exercitationem sint porro iste et impedit, sequi similique, nihil obcaecati.</p>
+        </div>
+    </section>
+    
+</body>
+</html>

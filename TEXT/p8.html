@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow</title>
+    <style>
+        div{
+            width: 200px;
+            padding: 20px;
+            height: 200px;
+            margin: 20px;
+            background-color: #cccc;
+        }
+        .b1{
+            /* overflow: hidden;
+            overflow: scroll; */
+            overflow: auto;
+        }
+        .b2 p{
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+    
+</head>
+<body>
+   <center>
+    <h1>Handling text-overfloes using css properties</h1>
+   </center> 
+   <hr>
+   <h1>Clip</h1>
+<div class="b1">
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+   </div>
+
+   <h1>text ellipsis(...)</h1>
+   <div class="b2">
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis nobis nam libero minima eligendi voluptatum enim, maxime voluptate asperiores fuga non placeat molestias quibusdam deleniti aliquid, perferendis magni sit tempore.</p>
+   </div>
+</body>
+</html>

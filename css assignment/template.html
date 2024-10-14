@@ -7,18 +7,63 @@
      <style>
         body{
             height: 150vh;
+            min-height: 100vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         .card{
-            background: url(https://as1.ftcdn.net/v2/jpg/04/73/73/72/1000_F_473737250_9gtRSdpe9fRFYhUvwbfsMLrvblP9g6Bp.jpg) no-repeat; 
+            background: url(https://www.shutterstock.com/image-photo/assorted-indian-food-on-black-260nw-1477286099.jpg) no-repeat; 
             width: 100%;
             height: 800PX;
             object-fit: cover;
             background-size: cover;
+            padding: 10px;
         }
         .card h1{
             font-size: 6rem;
             font-weight: 900;
-            -webkit-text-stroke: 2px white;
+            -webkit-text-stroke: 3px orangered;
+            color: black;
+            padding-top: 75px;
+            line-height: -1;
+            letter-spacing: 2px;
+        }
+        .card p{
+           color: azure;
+        }
+        .container{
+           display: flex;
+           text-align: center;
+           justify-content: center;
+        }
+        .card1 img{
+            flex: 1;
+            height: 600px;
+            width: 500px;
+            padding-left: 10px;
+            object-fit: cover;
+        }
+        .card2{
+            padding-top: 20px;
+            padding: 10px;
+        }
+        .card2 h1{
+            flex: 1;
+            font-size: 4rem;
+            padding-right: 200px;
+        }
+        .subtitle{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+        .card3 img{
+            flex: 1;
+            height: 600px;
+            width: 500px;
+            object-fit: cover;
         }
        
      </style>
@@ -27,6 +72,20 @@
     <section>
         <div class="card">
              <h1>HOME MADE <br>RESTURTANT</h1>
+             <p>Uis aute irure dolor in reprehenderit in voluptate velit esse cillum <br>dolore eu fugiat nulla pariatur Image from <span style="color: orangered; letter-spacing: 2px;">Freepik</span></p>
+        </div>
+        <div class="container">
+>            <div class="card1">
+                   <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/2c75d4d2250c55c69671ac47/53e1dd434950b108f5d08460962934761237d6ed5a4c704c7c2c7bd3964dc05f_1280.jpg" alt="loading...">
+             </div>
+             <div class="card2">
+                <h1>ABOUT</h1>
+                <p class="subtitle">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+             </div>
+            <div class="card3">
+                <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/fc662eecb1ff595cb4d5d61c/5ee1dc404c50b108f5d08460962934761237d6ed5a4c704c7c2c7bd3964dc25a_1280.jpg" alt="loading.....">
+            </div>
         </div>
     </section>
 </body>
