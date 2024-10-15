@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <h3>welcome back , test app</h3>
+            <br>
+
+            <div class="group">
+                <label for="email">Email address</label>
+                <input type="text" placeholder="example@gmail.com" id="email" name="email">
+            </div>
+
+            <div class="group">
+                <label for="password">Password</label>
+                <input type="text" placeholder="secreat password" id="password" name="password">
+            </div>
+            
+            <p>Don't have an account <a href="./create.html">Create account</a></p>
+            <button type="button" onclick="loginHandler()">Sign in</button>
+        </div>
+    </section>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js"></script> -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+    <script>
+         const email = document.getElementById('email');
+         const password = document.getElementById('password');
+
+         const firebaseConfig = {
+         apiKey: "AIzaSyAwbHqggp7LhOecQ7JKF1AhuIVAZM07gkI",
+         authDomain: "authentication-97c1b.firebaseapp.com",
+          projectId: "authentication-97c1b",
+         storageBucket: "authentication-97c1b.appspot.com",
+         messagingSenderId: "434283854315",
+         appId: "1:434283854315:web:6f179cd732e9a2f16a41ae",
+          measurementId: "G-30Q66W4F0X"
+       };
+
+        const app = firebase.initializeApp(firebaseConfig);//initializing firebase credeniyals in our website
+      
+
+
+        // const email = document.getElementById('email');
+        // const password = document.getElementById('password');
+
+        function loginHandler(){
+            // alert(email.value)
+            // alert(password.value)
+            const AuthenticationRoom = firebase.auth();//using firebase feature
+
+            AuthenticationRoom.signInWithEmailAndPassword(email.value, password.value)
+            .then(function(){
+                //if login is success this function will run
+                alert('Login is Success')
+            })
+            .catch(function(error){
+               alert('login is failed please try again later..')
+               console.log(error);
+            })
+        }
+    </script>
+</body>
+</html>
