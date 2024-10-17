@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+body {
+    background-color: rgb(0, 6, 54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 350px;
+    background-color:  rgb(0, 6, 54); 
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: rgb(23, 31, 94);
+}
+
+.login-box button {
+    padding: 10px;
+    background-color: rgb(23, 31, 94);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #007bbd;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.divider {
+    border-top: 1px solid #dbdbdb;
+    margin: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Instagram</h1>
+            <form>
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <button type="submit" onclick="loginHandler()" id="btn">Log In</button>
+            </form>
+            <br>
+            <p class="footer-text">Forgot password?</p>
+            <br>
+            <div class="divider"></div>
+            <br>
+            <p class="footer-text">Don't have an account? <a href="./loginpage.html">Sign up</a></p>
+        </div>
+    </div>
+
+    <script>
+        const username = document.getElementById('username');
+        const password = document.getElementById('password');
+        const btn = document.getElementById('btn');
+
+        const firebaseConfig = {
+        apiKey: "AIzaSyAwbHqggp7LhOecQ7JKF1AhuIVAZM07gkI",
+        authDomain: "authentication-97c1b.firebaseapp.com",
+         projectId: "authentication-97c1b",
+        storageBucket: "authentication-97c1b.appspot.com",
+        messagingSenderId: "434283854315",
+        appId: "1:434283854315:web:6f179cd732e9a2f16a41ae",
+         measurementId: "G-30Q66W4F0X"
+      };
+
+       const app = firebase.initializeApp(firebaseConfig);//initializing firebase credeniyals in our website
+     
+
+       function createAccountHandler(){
+           const AuthenticationRoom = firebase.auth();//using firebase feature
+           AuthenticationRoom.signInWithEmailAndPassword(username.value, password.value)
+           .then(function(){
+               alert('Login is Success')
+                window.location.href = './loginpage'
+           })
+           .catch(function(error){
+              alert('login is failed please try again later..')
+              console.log(error.message);
+           })
+       }
+   </script>
+</body>
+</html>

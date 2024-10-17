@@ -37,6 +37,7 @@
          const email = document.getElementById('email');
          const password = document.getElementById('password');
          const btn = document.getElementById('btn')
+
         const firebaseConfig = {
         apiKey: "AIzaSyDeFrBlDviB3FqI4MTAdnvlp3M-UBNCPIs",
         authDomain: "authentication-afec4.firebaseapp.com",
@@ -48,6 +49,7 @@
         };
         const app = firebase.initializeApp(firebaseConfig); //initializing firebase credentials in our website
         const AuthenticationRoom = firebase.auth();//using firebase feature
+        
         function createAccountHandler(){
             btn.innerText = 'Please Wait...'
             AuthenticationRoom.createUserWithEmailAndPassword(email.value, password.value)

@@ -9,7 +9,7 @@
 <body>
     <section class="container">
         <div class="card">
-            <h3>welcome back , test app</h3>
+            <h3>welcome back👋, test app</h3>
             <br>
 
             <div class="group">
@@ -23,7 +23,7 @@
             </div>
             
             <p>Don't have an account <a href="./create.html">Create account</a></p>
-            <button type="button" onclick="loginHandler()">Sign in</button>
+            <button type="button" onclick="loginHandler()" id="btn">Sign in</button>
         </div>
     </section>
 
@@ -34,6 +34,7 @@
     <script>
          const email = document.getElementById('email');
          const password = document.getElementById('password');
+         const btn = document.getElementById('btn');
 
          const firebaseConfig = {
          apiKey: "AIzaSyAwbHqggp7LhOecQ7JKF1AhuIVAZM07gkI",

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        .container{
+            padding: 20px;
+            margin: 30px;
+            border: 3px solid #2334;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            background-color: darkblue;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .b1{
+            border-radius: 10px;
+        }
+        .container .b2{
+            border-radius: 50px;
+        }
+        .container .b3{
+            border-radius: 50%;
+        }
+        .container .b4{
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+        .container .b5{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background: linear-gradient(90deg, #5a026e, #1e05be);
+            border-bottom-right-radius: 10px;
+            height: fit-content;
+        }
+        .container .b6{
+            border-radius: 20px 20px 20px 20px;
+        }
+        .container .b7{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Border-radius</h1>
+    </center>
+    <hr>
+  <div class="container">
+    <div class="b1">first</div>
+    <div class="b2">second</div>
+    <div class="b3">third</div>
+    <div class="b4">fourth</div>
+    <div class="b5">fifth</div>
+    <div class="b6">sixth</div>
+    <div class="b7">seventh</div>
+  </div>
+</body>
+</html>

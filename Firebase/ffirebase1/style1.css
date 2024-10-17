@@ -6,7 +6,7 @@
 }
 .container{
     min-height: 100vh;
-    background-color: rgb(245, 35, 35);
+    background-color: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
     border-radius: 5px;
 }
 .card a{
-    color: rgb(245, 35, 35);
+    color: blueviolet;
 
 }
 .card button{
@@ -48,5 +48,5 @@
     cursor: pointer;
 }
 .card button:hover{
-    background-color: rgb(61, 4, 4);
+    background-color: blueviolet;
 }

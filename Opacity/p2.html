@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <style>
+        .container{
+            padding: 30px;
+            margin: 30px;
+            border: 3px solid darkblue;
+        }
+        .container div{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: linear-gradient(90deg, #cf000e, #250297);
+            margin-bottom: 20px;
+        }
+       .b1{filter: blur(3px);}
+       .b2{filter: blur(4px);}
+       .b3{filter: blur(5px);}
+       .b4{filter: blur(6px);}
+       .b5{filter: blur(7px);}
+       .b6{filter: blur(8px);}
+       .b7{filter: blur(9px);}
+       .b8{filter: blur(10px);}
+       .b9{filter: blur(11px);}
+       .b10{filter: blur(12px);}
+
+       .b11{filter: blur(40px);}
+
+       img{
+        /* /* filter: brightness(30%); */
+        /* filter: contrast(50%); */
+        /* filter: drop-shadow(50%); */
+        /* filter: grayscale(80%); */
+        /* filter: hue-rotate(185%); */
+        /* filter: invert(90%); */
+         /* filter: opacity(10%); */
+        filter: saturate(20%); 
+        /* filter: sepia(100%); */
+       }
+
+       img:hover{
+        filter: blur(10px) saturate(0%) invert(100%);
+       }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>FILTERS</h1>
+    </center>
+    <hr>
+
+    <section class="container">
+        <div class="b1">1</div>
+        <div class="b2">0.9</div>
+        <div class="b3">0.8</div>
+        <div class="b4">0.7</div>
+        <div class="b5">0.6</div>
+        <div class="b6">0.5</div>
+        <div class="b7">0.4</div>
+        <div class="b8">0.3</div>
+        <div class="b9">0.2</div>
+        <div class="b10">0.1</div>
+        <div class="b11">0</div>
+
+        <img src="https://i.ytimg.com/vi/ssX0B6sg_BQ/maxresdefault.jpg" alt="blur-image" width="400px" height="400px">
+    </section>
+</body>
+</html>

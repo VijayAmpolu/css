@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>columns</title>
+    <style>
+        .container{
+            padding: 20px;
+            background-color: rgb(253, 231, 234);
+            font-family: sans-serif;
+            line-height: 1.5;
+            font-weight: 500;
+            column-count: 4;
+            gap: 30px;
+            column-rule: 2px solid pink;
+            column-fill: balance;
+        }
+        .container p{
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .container h1{
+            column-span: all;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <h1>Columns</h1>
+   </center> 
+   <section class="container">
+    <h1>This is the example for columns</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, maxime perspiciatis ut dolor obcaecati minus animi ad rerum, doloribus labore soluta dolores aspernatur dolore itaque incidunt ipsa sunt quia culpa.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, maxime perspiciatis ut dolor obcaecati minus animi ad rerum, doloribus labore soluta dolores aspernatur dolore itaque incidunt ipsa sunt quia culpa.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, maxime perspiciatis ut dolor obcaecati minus animi ad rerum, doloribus labore soluta dolores aspernatur dolore itaque incidunt ipsa sunt quia culpa.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, maxime perspiciatis ut dolor obcaecati minus animi ad rerum, doloribus labore soluta dolores aspernatur dolore itaque incidunt ipsa sunt quia culpa.</p>
+   </section>
+</body>
+</html>
