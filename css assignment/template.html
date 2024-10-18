@@ -25,8 +25,8 @@
         .card h1{
             font-size: 6rem;
             font-weight: 900;
-            -webkit-text-stroke: 3px orangered;
-            color: black;
+            -webkit-text-stroke: 3px white;
+            color:  black;
             padding-top: 75px;
             line-height: -1;
             letter-spacing: 2px;
@@ -38,11 +38,12 @@
            display: flex;
            text-align: center;
            justify-content: center;
+           gap: 20px;
         }
         .card1 img{
             flex: 1;
             height: 500px;
-            width: 350px;
+            width: 400px;
             margin-left: 150px;
             object-fit: cover;
         }
@@ -55,21 +56,24 @@
         }
         .card2 h1{
             flex: 1;
-            font-size: 4rem;
+            font-size: 6rem;
             text-align: center;
             justify-content: center;
-            width: 350px;
+            width: 400px;
             height: 200px;
-            background-color: yellow;
+            background-color: rgb(192, 158, 9);
             color: black;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-left: -20px;
         }
         .subtitle{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             text-align: justify;
             padding: 10px;
+            font-weight: bold;
+            line-height: 2;
         }
         .card3 img{
             flex: 1;
@@ -78,7 +82,14 @@
             object-fit: cover;
             margin-top: 130px;
         }
-       
+        .btn{
+            width: 240px;
+            height: 60px;
+            border: 1px solid black;
+            margin-left: 60px;
+            margin-top: 50px;
+            background-color: black;
+        }
      </style>
 </head>
 <body>
@@ -95,11 +106,17 @@
                 <h1>ABOUT</h1>
                 <p class="subtitle">Duis aute irure dolor in reprehenderit in <br>voluptate velit esse cillum dolore eu <br>fugiat nulla pariatur. Excepteur sint <br>occaecat cupidatat non proident, sunt in <br>culpa qui officia deserunt mollit anim id <br>est laborum.
               </p>
+              <br>
+              <p style="color: orangered; font-weight: bold; text-align: start; justify-content: start; margin-left: 5px; font-size: 1.2rem;">Learnmore</p>
+              <div class="btn"></div>
              </div>
             <div class="card3">
                 <img src="https://images03.nicepage.com/c461c07a441a5d220e8feb1a/fc662eecb1ff595cb4d5d61c/5ee1dc404c50b108f5d08460962934761237d6ed5a4c704c7c2c7bd3964dc25a_1280.jpg" alt="loading.....">
             </div>
         </div>
+        <br>
+        <br>
+        <img src="https://images01.nicepagecdn.com/page/90/82/web-page-design-preview-90820.jpg" alt="loading..." width="100%" height="600px" style="object-fit: cover;">
     </section>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .empty-cell-table{
+            empty-cells: hide;
+        }
+        td{
+            background-color: aqua;
+        }
+        th{
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Empty-cell-TABLE</h1>
+    </center>
+    <hr>
+
+    <table class="empty-cell-table">
+            <caption>Employee details</caption>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Mobile</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>A</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td></td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>C</td>
+                <td>500</td>
+            </tr>
+    </table>
+</body>
+</html>
