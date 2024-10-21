@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,td,th{
+            border: 1px solid #222;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .table-layout{             
+            width: 80%;
+            table-layout: fixed;
+        }
+        .table-layout td{
+            /* overflow: hidden; */
+            text-overflow: ellipsis;/*text*/
+        }
+        th{
+            background-color: grey;
+            padding: 30px;
+        }
+        tr:nth-child(odd){
+            background-color: #e7e7e7;
+        }
+        tr:nth-child(even){
+            background-color: rgb(225, 0, 0);
+        }
+        tr:nth-child(odd):hover{
+            background-color: lightgreen;
+        }
+        tr:nth-child(even):hover{
+            background-color: #fff;
+            columns: #000;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-layout" align="center">
+        <h1 style="text-align: center;">Famous Places</h1>
+        <tr>
+            <th>SI.No</th>
+            <th>LocationName</th>
+            <th>LocationAddress</th>
+            <th>BestTime Visiting</th>
+            <th>Location Images</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td>ARAKU-VALLEY</td>
+            <td>Visakhapatnam</td>
+            <td>SEP TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/ARAKU-VALLEY.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td>Visakhapatnam Tourism</td>
+            <td>Visakhapatnam</td>
+            <td>SEP TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/VISAKHAPATNAM.jpg" alt="..." width="220px"></td>
+        </tr>
+        
+        <tr>
+            <td>03</td>
+            <td>Amaravathi</td>
+            <td>Amaravathi</td>
+            <td>NOV TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/AMARAVATHI.jpg" alt="..." width="220px"></td>
+        </tr>
+       
+        <tr>
+            <td>04</td>
+            <td>Thirupathi</td>
+            <td>Thirupathi</td>
+            <td>SEP TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/TIRUPATI.jpg" alt=".." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>05</td>
+            <td>Vijayawada</td>
+            <td>Vijayawada</td>
+            <td>SEP TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/VIJAYAWADA.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>06</td>
+            <td>Srisailam</td>
+            <td>Srisailam</td>
+            <td>OCTOBER TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/SRISAILAM.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>07</td>
+            <td>Ryalaseema</td>
+            <td>Kurnool</td>
+            <td>DEC TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/KURNOOL.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>08</td>
+            <td>Godavari River</td>
+            <td>Rajamandary</td>
+            <td>OCTOBER TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/RAJAHAMUNDRY.jpg" alt=".." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>09</td>
+            <td>Lepakshi Temple</td>
+            <td>Anthapuram</td>
+            <td>SEP TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/LEPAKSHI.jpg" alt=".." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>Borra Caves</td>
+            <td>ARAKU-VALLEY</td>
+            <td>NOV TO FEB</td>
+            <td><img src="https://www.holidify.com/images/compressed/attractions/attr_2194.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>Kailasagiri</td>
+            <td>Visakhapatnam</td>
+            <td>MARCH TO JULY</td>
+            <td><img src="https://www.holidify.com/images/cmsuploads/compressed/Untitled_20200118153515.png" alt=".." width="220px"></td>
+        </tr>
+
+      
+    </table>
+</body>
+</html>

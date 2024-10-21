@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element</title>
+    <style>
+        center+hr+h1+p{
+            color: rgb(255, 0, 0);
+        }
+        center+hr+h1+p::first-line{
+            color: green;
+            font-weight: 800;
+            font-style: italic;
+        }
+        center~p~p::first-letter{
+            color: blueviolet;
+            font-size: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1><b>CSS Pseudo-elements..!</b></h1>
+        <p>In Css pseudo-elements allow you to style lements or parts of the elements without adding any IDs or classes to them.</p>
+
+        <p> css3 introduced a new dobble-colon(::) syntax for pseudo-elements to distinguish between them and pseudo-classes.</p>
+        <p><b>selector::pseudo-element{property:value}</b></p>
+    </center>
+    <hr>
+    <h1>::first-line ::first-letter</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, placeat odit! Neque cupiditate animi quisquam accusamus. Eum esse doloribus mollitia reiciendis dolorem aliquam! Nam deserunt eius veniam fugit perferendis eos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quaerat itaque a sint unde exercitationem fuga doloremque odit quos reprehenderit optio consequuntur ipsa eveniet ex minima dolore, harum rerum. Consequuntur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio obcaecati voluptatibus ea. Quod asperiores possimus quo, nisi quaerat ex harum molestiae officia, voluptas sunt culpa repellendus labore veritatis consequatur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero reprehenderit dicta, voluptates aperiam aliquam repellendus a qui alias odit dolor deleniti aut commodi cumque ipsum, voluptatibus sunt culpa incidunt illum.</p>
+<!--      
+    <h1>::first-line</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, odio officiis quo at tenetur ipsum a corrupti culpa quisquam nisi nesciunt? Itaque vitae a delectus quos ex, qui commodil Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis optio consectetur libero voluptates. Animi sed amet repellendus alias minus ullam, aliquid tempora, dolores vitae, quasi in sint possimus doloribus veniam!</p>
+
+    <h1>::first-letter</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos impedit dolores animi iure est tempora sint assumenda eius veritatis ad voluptatum quos explicabo blanditiis reiciendis repudiandae, provident, tempore, voluptate vel! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque ut, excepturi doloremque, nesciunt veniam autem harum voluptate voluptatibus laboriosam soluta fuga, animi officia expedita architecto adipisci labore quam quaerat!</p> -->
+</body>
+</html>

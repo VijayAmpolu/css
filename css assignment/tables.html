@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,td,th{
+            border: 1px solid #222;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .table-layout{             
+            width: 40%;
+            table-layout: fixed;
+        }
+        .table-layout td{
+            /* overflow: hidden; */
+            text-overflow: ellipsis;/*text*/
+        }
+        th{
+            background-color: grey;
+        }
+        tr:nth-child(odd){
+            background-color: #e7e7e7;
+        }
+        tr:nth-child(even){
+            background-color: rgb(225, 0, 0);
+        }
+        tr:nth-child(odd):hover{
+            background-color: lightgreen;
+        }
+        tr:nth-child(even):hover{
+            background-color: #fff;
+            columns: #000;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-layout" align="center">
+        <h1 style="text-align: center;">Famous Collages</h1>
+        <tr>
+            <th>SI.No</th>
+            <th>CollageName</th>
+            <th>Address</th>
+            <th>Contact number</th>
+            <th>Grade</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td>KL University</td>
+            <td>Guntur</td>
+            <td>08942-12345</td>
+            <td>NaacA+</td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td>GMR University</td>
+            <td>Srikakulam</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+        
+        <tr>
+            <td>03</td>
+            <td>GITAM Deemed University</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+       
+        <tr>
+            <td>04</td>
+            <td>GVP University</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+        <tr>
+            <td>05</td>
+            <td>ANITS Engineering Collage</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+        <tr>
+            <td>06</td>
+            <td>RAGHU Engineering Collage</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>07</td>
+            <td>VIGNAN Engineering Collage</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>08</td>
+            <td>VIGNAN  Girls Engineering Collage</td>
+            <td>Visakhapatnam</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>09</td>
+            <td>RAGHU Girls Engineering Collage</td>
+            <td>Vizianagaram</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>10</td>
+            <td>AITAM Engineering Collage</td>
+            <td>Vizianagaram</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>11</td>
+            <td>JNTUGV University</td>
+            <td>Vizianagaram</td>
+            <td>08942-98765</td>
+            <td>Affilated JNTUGV</td>
+        </tr>
+
+        <tr>
+            <td>12</td>
+            <td>JNTUA University</td>
+            <td>Anthapuram</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+        <tr>
+            <td>13</td>
+            <td>JNTUK University</td>
+            <td>Kakinada</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+        <tr>
+            <td>14</td>
+            <td>VIT University</td>
+            <td>Vijayawada</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+        <tr>
+            <td>15</td>
+            <td>Velagapudi Ramakrishna Siddhartha Engineering College</td>
+            <td>Vijayawada</td>
+            <td>08942-98765</td>
+            <td>Autonomous</td>
+        </tr>
+
+
+      
+    </table>
+</body>
+</html>

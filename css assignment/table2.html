@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,td,th{
+            border: 1px solid #222;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .table-layout{             
+            width: 90%;
+            table-layout: fixed;
+        }
+        .table-layout td{
+            /* overflow: hidden; */
+            text-overflow: ellipsis;/*text*/
+        }
+        th{
+            background-color: grey;
+            padding: 30px;
+        }
+        tr:nth-child(odd){
+            background-color: #e7e7e7;
+        }
+        tr:nth-child(even){
+            background-color: rgb(37, 0, 225);
+        }
+        tr:nth-child(odd):hover{
+            background-color: lightgreen;
+        }
+        tr:nth-child(even):hover{
+            background-color: #fff;
+            columns: #000;
+        }
+    </style>
+</head>
+<body>
+    <table class="table-layout" align="center">
+        <h1 style="text-align: center;">Famous Persons</h1>
+        <tr>
+            <th>SI.No</th>
+            <th>Name</th>
+            <th>Born</th>
+            <th>Acheivements</th>
+            <th>Profile</th>
+        </tr>
+
+        <tr>
+            <td>01</td>
+            <td>Karnam Malleswari</td>
+            <td>Born on June 1st, 1975 in Amadalavalasa, Srikakulam</td>
+            <td>She won the bronze medal and became the first Indian woman to win an Olympic medal. She is also the first Indian weightlifter, male or female, to win an Olympic medal. Her medal was the only medal that India secured in the 2000 Olympics.</td>
+            <td><img src="https://i.ytimg.com/vi/vJIuZN2AzTw/maxresdefault.jpg" alt="..." width="250px"></td>
+        </tr>
+
+        <tr>
+            <td>02</td>
+            <td>Gurajada Apparao</td>
+            <td>21 September 1862, Visakhapatnam</td>
+            <td>Indian playwright, dramatist, poet, and writer known for his works in Telugu theatre.</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Gurazada_Apparao_portrait_01.jpg" alt="..." width="250px"></td>
+        </tr>
+        
+        <tr>
+            <td>03</td>
+            <td>Pusapati Vijayarama Gajapati Raj </td>
+            <td> 2 May 1924, Vizianagaram</td>
+            <td> Former Member of the Lok Sabha</td>
+            <td><img src="https://scontent.fblr8-1.fna.fbcdn.net/v/t31.18172-8/12525310_984720858264071_4066906023847604916_o.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f798df&_nc_ohc=vNOvUZ2pqs4Q7kNvgFLLuIw&_nc_zt=23&_nc_ht=scontent.fblr8-1.fna&_nc_gid=ACWux38W6kUYlwjMJlHmMh4&oh=00_AYAfpO8Nfr5mOllLYtm_hBL_Pp0zZuEhcsAkBQwEPzoaCQ&oe=673D4912" alt="..." width="250px"></td>
+        </tr>
+       
+        <tr>
+            <td>04</td>
+            <td>Alluri Sitarama Raju</td>
+            <td>Born in 1897 on 4th July in Pandrangi village, Bheemunipatnam, Visakhapatnam</td>
+            <td>Indian revolutionary who waged an armed rebellion against the British colonial rule in India</td>
+            <td><img src="https://www.holidify.com/images/bgImages/TIRUPATI.jpg" alt=".." width="250px"></td>
+        </tr>
+
+        <tr>
+            <td>05</td>
+            <td>Devika Rani</td>
+            <td>30 March 1908 in Visakhapatnam</td>
+            <td>An Indian actress who was active in Hindi films during the 1930s and 1940s.</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Devika_Rani_in_Nirmala_%281938%29.jpg/800px-Devika_Rani_in_Nirmala_%281938%29.jpg" alt="..." width="250px"></td>
+        </tr>
+
+        <tr>
+            <td>06</td>
+            <td>D. V. Subba Rao</td>
+            <td>Srisailam</td>
+            <td>OCTOBER TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/SRISAILAM.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <!-- <tr>
+            <td>07</td>
+            <td>Ryalaseema</td>
+            <td>Kurnool</td>
+            <td>DEC TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/KURNOOL.jpg" alt="..." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>08</td>
+            <td>Godavari River</td>
+            <td>Rajamandary</td>
+            <td>OCTOBER TO MARCH</td>
+            <td><img src="https://www.holidify.com/images/bgImages/RAJAHAMUNDRY.jpg" alt=".." width="220px"></td>
+        </tr>
+
+        <tr>
+            <td>09</td>
+            <td>Lepakshi Temple</td>
+            <td>Anthapuram</td>
+            <td>SEP TO FEB</td>
+            <td><img src="https://www.holidify.com/images/bgImages/LEPAKSHI.jpg" alt=".." width="220px"></td>
+        </tr>
+       -->
+    </table>
+</body>
+</html>
