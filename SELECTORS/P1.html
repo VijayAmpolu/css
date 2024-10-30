@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{/*universal selactor*/
+            font-size: 2rem;
+            color: purple;
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+
+        }
+        .container *{
+            color: green;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS SELECTOR</h1>
+        <p>we have some css selactprs to style the html element</p>
+    </center>
+    <ul>
+        <li>Universal selector (*)</li>
+        <li>Element selector (tag name)(*)</li>
+        <li>Class name selector (class name using .)</li>
+        <li>Id selector (using id attribute)</li>
+        <li>Attribute  selector (using any attribute inside the element)</li>
+        <li>Attribute with the value selector (attribute with value) </li>
+    </ul>
+
+    <h1><b>Universal selector (*)</b></h1>
+    <p>this selector for all the elements presents in parent element</p>
+
+    <div class="container">
+        <!-- h1*10{heading$} -->
+        <h1>heading1</h1>
+        <h1>heading2</h1>
+        <h1>heading3</h1>
+        <h1>heading4</h1>
+        <h1>heading5</h1>
+        <h1>heading6</h1>
+        <h1>heading7</h1>
+        <h1>heading8</h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="radio"]:checked{
+            border: none;
+            outline: 2px solid red;
+            accent-color: red;
+            width: 50px;
+        }
+        input[type="radio"]:default{
+            width: 50px;
+            outline: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>:checked and :default(radio,checkboxes)</h1>
+    </center>
+    <hr>
+    <form action="">
+        <label for="">How do you find about us?</label>
+        <label for="">
+            <input type="radio" name="source" id="">
+            youtube
+        </label>
+
+        <label for="">
+            <input type="radio" name="source" id="">
+            facebok
+        </label>
+
+        <label for="">
+            <input type="radio" name="source" id="">
+            instagram
+        </label>
+
+        <label for="">
+            <input type="radio" name="source" id="" checked>
+            whatsapp
+        </label>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            padding: 30px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        .card input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            border-radius: 100px;
+        }
+      
+        .emoji{
+            min-width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 100px;
+            background: url(https://cliply.co/wp-content/uploads/2021/03/392103390_SAD_EMOJI_400px.gif) no-repeat center;
+            background-size: cover;
+        }
+        .input{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        input:focus + .emoji{
+            background: url(https://i.pinimg.com/originals/62/eb/fa/62ebfa7a8501e2c48a62f95baa6dc5f9.gif) no-repeat center;
+            background-size: cover;
+        }
+        input:focus{
+            border: 2px solid #ffce34;
+        }
+        input:disabled + .emoji{
+            background: url(https://i.pinimg.com/originals/c4/07/04/c4070448ce8174b2b3e121081ddbbee5.gif)  no-repeat center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <label for="">Username</label>
+          <div class="input">
+            <input type="text" placeholder="Enter your name" value="dcd" >
+            <div class="emoji"></div>
+          </div>
+          <input type="button" disabled value="create account">
+        </div>
+    </div>
+</body>
+</html>
