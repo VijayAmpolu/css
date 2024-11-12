@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .example h1{
+            width: 500px;
+            background-color: red;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            color: #fff;
+            position: relative;
+            border-radius: 100px;
+            font-family: sans-serif;
+        }
+        .example h1::before{
+            content: 'Before';
+            background-color: black;
+            color: red;
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 100px 0px 0px 100px;
+        }
+        .example h1::after{
+            content: 'After';
+            background-color: black;
+            color: red;
+            padding: 10px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 0px 100px 100px 0px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>::After and ::Before</h1>
+    </center>
+    <hr>
+
+    <div class="example">
+        <h1>Main Element</h1>
+    </div>
+    <hr>
+</body>
+</html>

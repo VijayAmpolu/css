@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: #0c0c0c;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 15px;
+}
+header nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-color: rgb(42, 116, 72);
+}
+
+/* p3.html */
+
+.banner1{
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    padding: 4%;
+    background-color: rgb(42, 116, 72);
+}
+.heading{
+    font-size: 4rem;
+    color: #fff;
+
+}
+.text-green{
+    color: rgb(255, 77, 0);
+}
+.banner1 .left{
+    flex: 2;
+}
+.banner1 .right{
+    flex: 1;
+}
+.banner1 .right img{
+    width: 100%;
+}
+.banner1 .left button{
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(42, 116, 72);
+    font-weight: 700;
+}
+.banner1 .left p{
+    font-size: 1.2rem;
+    color: aqua;
+    line-height: 1.5;
+}
+.banner2{
+    min-height: 90vh;
+    padding: 4%;
+    text-align: center;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/944/995/821/abstract-backgrounds-minimalistic-website-wallpaper-preview.jpg);
+    background-repeat: no-repeat;/*left bottom,no-repaet,repeat-x,repeat-y*/
+    background-position: center;/*left-bottom,left-top,t=right top,right bottom,top centger,bottom center,left,right,center,top,bottom?*/
+    background-size: 100%;/*0%-100%,cover,auto,contain*/
+}
+.banner2 h1 .banner2 p{
+    color: white !important;
+}
+.banner2 button{
+    padding: 10px 30px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border-radius: 100px;
+}
+/*p4.html*/
+.banner3{
+    padding: 4%;
+    background-image: url(https://img.freepik.com/premium-photo/business-agreement-hand-shaking-front-modern-building_42667-22.jpg?w=996);
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+    min-height: 30vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+.subtitle{
+    font-size: 1.2rem;
+    line-height: 2;
+    padding: 4%;
+}

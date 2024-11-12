@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           min-height: 100vh;
+        }
+        .line{
+           width: 3px;
+           height: 80px;
+           background-color: rgb(4,3,0);
+           position: relative;
+           z-index: 2;
+        }
+        .line::before{
+            content: '';
+            width: 100px;
+            height: 30px;
+            background-color: lightgreen;
+            position: absolute;
+            border-radius: 100%;
+            left: -90px;
+            transform: rotate(40deg);
+
+
+        }
+        .line::after{
+            content: '';
+            width: 100px;
+            height: 30px;
+            background-color: lightgreen;
+            position: absolute;
+            border-radius: 100%;
+            right: -90px;
+            top: 20px;
+            transform: rotate(-40deg);
+
+        }
+        .pot{
+            width: 90px;
+            height: 100px;
+            background-color: rgb(24,11,1);
+            transform: translateX(-50%) translateY(-20px);
+            border-radius: 10px;
+            position: relative;
+        }
+        .pot::before{
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 40px;
+            background-color: rgb(66,44,28);
+            border-radius: 100%;
+            left: 50%;
+            top: -10px;
+            transform: translateX(-50%);
+        }
+        .flower{
+            width: 100px;
+            transform: translateX(-30px) translateY(28px);
+        }
+    </style>
+</head>
+<body>
+    <div class="graphics">
+        <img src="https://cdn.dribbble.com/users/2874108/screenshots/10860489/media/bd22847aec54d8d6340869b081f94bb2.gif" alt="" class="flower">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="pot"></div>
+    </div>
+</body>
+</html>

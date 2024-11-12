@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .borders{
+            padding: 30px;
+            gap: 30px;
+
+        }
+        .borders h1{
+            width: fit-content;
+            padding: 20px;
+        }
+        .borders .f1{
+            border: 5px solid darkgoldenrod;/*solid dotted dashed double groove inset outset ridge*/
+        }
+        .borders .f2{
+            border-width: 5px;
+            border-color: red green ;/*yaxis and x-axis*/
+            border-style: dotted;
+        }
+        .borders .f3{
+            border-width: 5px;
+            border-color: red green blue;
+            border-style: dashed;
+        }
+        .borders .f4{
+            border-width: 5px;
+            border-color: red green blue yellow;
+            border-style: groove;
+        }
+        .loading-example{
+            padding: 30px;
+
+        }
+        .loading{
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border-radius: 100px;
+            border-width: 8px;
+           border-color: blue transparent blue blue;
+           border-style: dotted;
+           animation: animate 0.9s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .example3{
+            padding: 30px;
+        }
+        .e1{
+            width: 10px;
+            border-width: 30px;
+            border-color: transparent green transparent yellow;
+            border-style: solid;
+            border-radius: 100px;
+            animation: animate 0.9s linear infinite;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Border</h1>
+        <p>Border appear directly margin and padding.It can either be predefined style like solid line,dotted line or double line or it can be an image</p>
+    </center>
+    <hr>
+    <div class="borders">
+        <h1 class="f1">sample text</h1>
+        <h1 class="f2">sample text</h1>
+        <h1 class="f3">sample text</h1>
+        <h1 class="f4">sample text</h1>
+    </div><br>
+
+    <div class="loading-example">
+        <div class="loading"></div>
+    </div><br>
+
+    <div class="example3">
+        <div class="e1"></div>
+    </div>
+</body>
+</html>

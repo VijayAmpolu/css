@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-top: 10px;
+        }
+        .p1::file-selector-button{
+            background-color: #15038d;
+            border: none;
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form{
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .profile{
+            width: 80px;
+            height: 80px;
+            border-radius: 100px;
+            background: url(https://t4.ftcdn.net/jpg/04/83/90/95/360_F_483909569_OI4LKNeFgHwvvVju60fejLd9gj43dIcd.jpg) no-repeat center;
+            background-size: cover;
+
+        }
+        .profile input{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            transform: translateY(70px);
+        }
+        .profile input.p1::file-selector-button{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>::file-selector-button</h1>
+    </center>
+    <br>
+
+    <form action="">
+        <label for="profile">Upload your profile</label>
+        <input type="file" name="profile" id="profile" class="p1">
+
+        <input type="file" name="profile" id="profile" class="profile">
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container, .container2{
+             padding: 30px;
+             margin: 30px;
+             background-color: lightblue;
+        }
+        .container p, .container2 p{
+            font-size: 1.3rem;
+            line-height: 2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container p::first-letter{
+            font-size: 4rem;
+            font-weight: 900;
+            color: darkred;
+        }
+        .container p::first-line{
+            font-size: 3rem;
+            text-decoration: underline;
+            text-underline-offset: 15px;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            color: green;
+        }
+        .container2 p::first-letter{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>CSS Pseudo-elements..!</h1>
+        <p>the css pseudo-elements allow you to style the elements or parts of the elements without adding any IDs or classes to them</p>
+        <p>css introduced a new double-colon :: syntax for pseudo-elemenst to distinguidh between them ans pseudo-eclasses</p>
+        <p><b>selector::pseudo-element {propeety: value;</b></p>}
+    </center>
+    <hr>
+    <h1>::first-line and ::first-letter</h1>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima totam quia, aliquid, adipisci voluptatibus quod atque illum odio ad assumenda nihil voluptates est placeat cum quos. Quibusdam nisi tenetur velit.</p>
+    </div>
+
+    <div class="container2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis error obcaecati adipisci voluptas inventore culpa, pariatur expedita molestiae architecto corrupti iusto ducimus voluptatum! Officia, recusandae. Dolorem quasi ex repellat culpa!</p>
+    </div>
+</body>
+</html>
